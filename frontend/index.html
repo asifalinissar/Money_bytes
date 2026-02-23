@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let ws = new WebSocket("ws://localhost:8000/ws/price");
+
+ws.onmessage = (event) => {
+    console.log(event.data);
+};
+</script>
+</body>
+</html>
